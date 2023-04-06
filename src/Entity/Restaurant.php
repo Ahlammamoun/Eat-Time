@@ -42,6 +42,11 @@ class Restaurant
      */
     private $Category;
 
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $picture;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -103,6 +108,18 @@ class Restaurant
     public function setCategory(?Category $Category): self
     {
         $this->Category = $Category;
+
+        return $this;
+    }
+
+    public function getPicture(): ?string
+    {
+        return $this->picture;
+    }
+
+    public function setPicture(string $picture): self
+    {
+        $this->picture = $picture;
 
         return $this;
     }
