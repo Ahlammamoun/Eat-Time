@@ -1,0 +1,14 @@
+section {
+    margin: 20%;
+    max-height: 60px;
+  
+}
+
+.col-12.movie__poster.img-thumbnail.h-20 {
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.col-md-12 {
+    border: solid 2px black;
+}

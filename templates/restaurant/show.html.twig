@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+
+
+{% block body %}
+
+
+<div class="my-5 text-center">
+    <img src="../assets/favicon1.png" height="120" width="250" alt="logo" class="logo">
+    <h1 class="display-6 fw-bold">Restaurants</h1>
+         <p class="lead mb-4 text-muted">Eat'Time</p>
+   
+            <section class="restaurant">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h1>{{ restaurant.name }}</h1>
+                        <h2>{{ restaurant.city }}</h2>
+                        <div class="col-12 movie__poster img-thumbnail h-20" style="background-image: url({{ restaurant.picture }});" class="images"></div>      
+                    </div>
+                </div>
+            </section>
+     
+</div>
+
+
+
+{% endblock %}
